@@ -1,2 +1,23 @@
-@import './common';
-@import './example';
+@import './base/reset';
+@import './base/common';
+@import './container';
+@import './about';
+@import './blog';
+@import './footer';
+@import './header';
+@import './hero';
+
+// @import './example';
+
+// font-family: 'Seymour One';
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.76;
+  letter-spacing: 0.04em;
+  color: #fcfcfc;
+  background-color: #84a178;
+}
