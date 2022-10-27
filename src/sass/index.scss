@@ -9,6 +9,7 @@
 @import './made';
 @import './product';
 @import './slider';
+@import './modal-by-now.scss';
 
 // font-family: 'Seymour One', sans-serif;
 
@@ -20,5 +21,5 @@ body {
   line-height: 1.76;
   letter-spacing: 0.04em;
   color: $primary-text-color;
-  // background-color: $primary-bg-color;
+  background-color: $primary-bg-color;
 }

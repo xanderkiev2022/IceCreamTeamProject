@@ -1,2 +1,2 @@
-import './js/about-modal';
+import './js/modalByNow.js';
 import './js/slider.js';

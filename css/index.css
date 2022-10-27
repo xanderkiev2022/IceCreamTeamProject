@@ -101,14 +101,16 @@ button {
 
 .products__img {
   margin: 0 auto;
-  background-image: url("../images/product/bgdo.jpg");
+  background-image: url('../images/product/bgdo.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
   .products__img {
-    background-image: url("../images/product/bgdt.jpg");
+    background-image: url('../images/product/bgdt.jpg');
   }
 }
 @media screen and (min-width: 768px) {
@@ -116,9 +118,11 @@ button {
     background-image: url(../images/product/bgto.jpg);
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .products__img {
-    background-image: url("../images/product/bgtt.jpg");
+    background-image: url('../images/product/bgtt.jpg');
   }
 }
 @media screen and (min-width: 1200px) {
@@ -129,9 +133,11 @@ button {
     background-image: url(../images/product/bgdo.jpg);
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .products__img {
-    background-image: url("../images/product/bgdt.jpg");
+    background-image: url('../images/product/bgdt.jpg');
   }
 }
 
@@ -156,7 +162,7 @@ button {
 }
 
 .products__header-title {
-  font-family: "Seymour One";
+  font-family: 'Seymour One';
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -217,7 +223,7 @@ button {
 }
 
 .products__item-wrap {
-  background: #EFD478;
+  background: #efd478;
   border-radius: 24px;
   height: 420px;
   padding-left: 40px;
@@ -252,7 +258,7 @@ button {
 }
 .products__item-wrap:before {
   position: absolute;
-  content: "";
+  content: '';
   width: 201px;
   height: 211px;
   top: -100px;
@@ -337,11 +343,11 @@ button {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.76;
   letter-spacing: 0.04em;
   color: #fcfcfc;
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */
