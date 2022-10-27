@@ -87,10 +87,21 @@ footer {
     display: flex;
     padding-bottom: 28px;
     justify-content: flex-end;
+    padding-left: 27px;
+}
+
+.footer__socials {
+  padding-left: 27px;
 }
 
 .social-icons {
-    padding-left: 27px;
+  fill: #84A178;
+  transition: 300ms linear;
+    &:hover,
+    &:focus {
+      fill: white;
+      transition: 300ms linear;
+    }
 }
 
 .footer__contact {
@@ -132,7 +143,7 @@ footer {
 }
 
 hr {
-    width: 100%;
+  width: 100%;
 }
 
 .footer--rights {
