@@ -145,15 +145,20 @@
 
 .bg-image-corn {
   position: absolute;
-  bottom: 0;
-  left: 635px;
-  max-width: 455px;
-  background: radial-gradient(
-    circle,
-    rgba(248, 241, 241, 0) 40%,
-    rgba(207, 255, 220, 0.483) 30%,
-    rgba(190, 242, 202, 0) 65%
-  );
+
+  @media screen and (min-width: 768px) and (max-width: 1199.9px) {
+    height: 683px;
+    bottom: -84px;
+    left: 232px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 650px;
+    bottom: -100px;
+    left: 550px;
+  }
+
+
+
 }
 
 .bg-image-dots {
