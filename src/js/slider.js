@@ -9,6 +9,11 @@ new Swiper('.mySwiper1', {
 
 new Swiper('.mySwiper2', {
   autoplay: true,
+  slidesPerView: 'auto',
+  loop: true,
+  loopedSlides: 3,
+  spaceBetween: 500,
+  centeredSlides: true,
 
   pagination: {
     el: '.swiper-pagination',
