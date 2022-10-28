@@ -336,18 +336,15 @@
     z-index: -1;
   }
   @media screen and (min-width: 768px) and (max-width: 1199.9px) {
-    height: 475px;
+    height: 450px;
     bottom: -59px;
-    left: 358px;
+    left: 340px;
     z-index: -1;
   }
   @media screen and (min-width: 1200px) {
-    // width: 650px;
-    // bottom: -100px;
-    // left: 550px;
-    height: 785px;
-    bottom: -103px;
-    left: 550px;
+    height: 760px;
+    bottom: -100px;
+    left: 536px;
     z-index: 0;
   }
 }
