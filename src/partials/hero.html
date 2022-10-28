@@ -1,6 +1,6 @@
 <article class="hero container" id="hr">
   <div class="hero__container">
-    <h1 class="hero__title">
+    <h1 class="hero__title swing">
       ice cream made with <span class="increasing">passion</span>
     </h1>
 
@@ -30,11 +30,20 @@
           ./images/hero/dt-plate-icecream@2x.png 2x
         "
       />
+
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/hero/tab-plate-icecream@1x.png 1x,
+          ./images/hero/tab-plate-icecream@2x.png 2x
+        "
+      />
+
       <img
-        class="thumb__image"
+        class="thumb__image grow"
         src="./images/hero/dt-plate-icecream@1x.png"
         alt="plate with ice-cream"
-        width="225"
+       
       />
     </picture>
     <div class="thumb__wrap">
@@ -43,7 +52,7 @@
         tempor incididunt ut labore et
       </p>
       <a href="#">
-        <svg class="thumb__svg" width="41" height="16">
+        <svg class="thumb__svg">
           <use href="./images/header/icons.svg#arrow"></use>
         </svg>
       </a>
@@ -58,11 +67,24 @@
         ./images/hero/dt-icecream-corn@2x.png 2x
       "
     />
+    <source
+      media="(min-width: 768px)"
+      srcset="
+        ./images/hero/tab-icecream-corn@1x.png 1x,
+        ./images/hero/tab-icecream-corn@2x.png 2x
+      "
+    />
+    <source
+    media="(max-width: 767px)"
+    srcset="
+      ./images/hero/mob-icecream-corn@1x.png 1x,
+      ./images/hero/mob-icecream-corn@2x.png 2x
+    "
+  />
     <img
       class="bg-image-corn"
-      src="./images/hero/dt-icecream-corn@1x.png"
+      src="./images/hero/tab-icecream-corn@1x.png"
       alt="ice-cream"
-      width="484"
     />
   </picture>
 
@@ -71,6 +93,20 @@
       media="(min-width: 1200px)"
       srcset="./images/hero/dt-dots@1x.png 1x, ./images/hero/dt-dots@2x.png 2x"
     />
+    <source
+      media="(min-width: 768px)"
+      srcset="
+        ./images/hero/tab-dots@1x.png 1x,
+        ./images/hero/tab-dots@2x.png 2x
+      "
+    />
+    <source
+    media="(max-width: 767.9px)"
+    srcset="
+      ./images/hero/mob-dots@1x.png 1x,
+      ./images/hero/mob-dots@2x.png 2x
+    "
+  />
     <img
       class="bg-image-dots"
       src="./images/hero/dt-dots@1x.png"
