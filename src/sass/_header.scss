@@ -33,6 +33,7 @@
 }
 
 .site-nav {
+  z-index: 1;
   @media screen and (max-width: 1199.9px) {
     display: none;
   }
@@ -49,6 +50,8 @@
   color: $white;
   font-weight: 700;
   line-height: calc(20 / 16);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
     color: $accent-color;
@@ -92,6 +95,13 @@
 
   font-weight: 600;
   line-height: calc(17 / 14);
+
+  z-index: 1;
+
+  transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+              stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
     background-color: #0a8817;
