@@ -29,6 +29,7 @@
 .location__list {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
     @media screen and(min-width: 768px) {
         display: flex;
@@ -76,6 +77,7 @@
 .location__title-box {
    font-weight: 500;
    font-size: 12px;
+   line-height: 1.86;
    color: $secondary-text-color;
    text-transform: uppercase;
     @media screen and(min-width: 768px) {
@@ -87,11 +89,17 @@
     }
 }
 
-.location__item {
+.location__connect {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.location__point {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    margin-bottom: 24px;
+    // margin-bottom: 24px;
 }
 
 .location__town {
@@ -134,7 +142,7 @@
     width: 100%;
     height: 1px;
     background: #E1E1E1;
-    margin-bottom: 24px;
+    // margin-bottom: 24px;
 }
 
 .location__timing {
@@ -143,18 +151,17 @@
     gap: 8px;
 }
 
-.location__item-timing {
+.location__item {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    // margin-bottom: 8px;
-    &:last-child {margin-bottom: 16px;}
+    // &:last-child {margin-bottom: 24px;}
+
 }
 
 .location__week {
     font-weight: 500;
     font-size: 12px;
-    line-height: 1.83;
+    line-height: 1.86;
     color: $secondary-text-color;
     @media screen and(min-width: 768px) {
         font-size: 14px;
@@ -169,7 +176,7 @@
 .location__time {
     font-weight: 500;
     font-size: 12px;
-    line-height: 1.83;
+    line-height: 1.86;
     color: #ABABAB;
     @media screen and(min-width: 768px) {
         font-size: 14px;
@@ -181,10 +188,10 @@
     }
 }
 
-.location__contact {
-    display: flex;
-    flex-direction: column;
-}
+// .location__contact {
+//     display: flex;
+//     flex-direction: column;
+// }
 
 .location__contact-item {
     font-weight: 500;
