@@ -226,7 +226,11 @@
 
 .location__btn {
     cursor: pointer;
-    display: inline-block;
+    // display: inline-block;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
     width: 196px;
     padding: 12px 34px;
     background: #F8D24E;
@@ -265,4 +269,11 @@
             background-color: transparent;
         }
     }    
+}
+
+.location__icon {
+    transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  fill: currentColor;
 }
