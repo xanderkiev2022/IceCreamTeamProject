@@ -1,11 +1,18 @@
 .header {
+  padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 61px;
+    padding-top: 12px;
+
   @media screen and (min-width: 768px) and (max-width: 1199.9px) {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
     padding-top: 20px;
     padding-bottom: 40px;
   }
   @media screen and (min-width: 1200px) {
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 8px;
     padding-bottom: 45px;
   }
@@ -26,7 +33,7 @@
 }
 
 .site-nav {
-  @media screen and (min-width: 768px) and (max-width: 1199.9px) {
+  @media screen and (max-width: 1199.9px) {
     display: none;
   }
 }
@@ -49,8 +56,17 @@
 }
 
 .mobile {
-    margin-left: auto;
-    margin-right: 32px;
+  margin-left: auto;
+    
+    &__link{
+      display: flex;
+      align-items: center;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199.9px) {
+      margin-left: auto;
+      margin-right: 32px;
+    }
+
     @media screen and (min-width: 1200px) {
         display: none;
       }
@@ -87,5 +103,9 @@
   }
   &:disabled {
     background-color: #ababab;
+  }
+
+  @media screen and (max-width: 767.9px) {
+    display: none;
   }
 }

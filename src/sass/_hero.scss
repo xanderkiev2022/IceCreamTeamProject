@@ -1,6 +1,20 @@
 .hero {
   position: relative;
-  padding-bottom: 65px;
+
+  @media screen and (max-width: 767.9px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.9px) {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 13px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 65px;
+  }
 }
 .hero__container {
   position: relative;
@@ -8,13 +22,23 @@
   justify-content: space-between;
 }
 .hero__title {
-  padding-bottom: 28px;
-
   font-family: 'Seymour One';
   text-transform: uppercase;
   color: $primary-text-color;
 
+  @media screen and (max-width: 767.9px) {
+    padding-bottom: 32px;
+    max-width: 247px;
+    font-size: 26px;
+    line-height: calc(33 / 26);
+    .increasing {
+      font-size: 34px;
+      line-height: 96.5%;
+    }
+  }
+
   @media screen and (min-width: 768px) and (max-width: 1199.9px) {
+    padding-bottom: 20px;
     max-width: 182px;
     font-size: 18px;
     line-height: calc(23 / 18);
@@ -26,6 +50,8 @@
   }
 
   @media screen and (min-width: 1200px) {
+    padding-bottom: 28px;
+
     max-width: 367px;
     font-size: 38px;
     line-height: calc(48 / 38);
@@ -33,6 +59,9 @@
 }
 
 .retail {
+  @media screen and (max-width: 767.9px) {
+    display: none;
+  }
 }
 .retail__item {
 }
@@ -67,24 +96,43 @@
   }
 }
 .buttons {
-  margin-bottom: 42px;
   display: flex;
   align-items: center;
   color: inherit;
   background-color: transparent;
+
+  @media screen and (max-width: 767.9px) {
+    padding-bottom: 239px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.9px) {
+    margin-bottom: 28px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 42px;
+  }
 }
 .button__bordered {
   display: flex;
   align-items: center;
   justify-content: center;
   border: 2px solid $accent-color;
-  width: 134px;
-  height: 42px;
   border-radius: 10px;
 
   font-weight: 600;
-  line-height: calc(18 / 14);
   color: $secondary-text-color;
+
+  @media screen and (max-width: 1199.9px) {
+    width: 62px;
+    height: 24px;
+    font-size: 8px;
+    line-height: calc(10 / 8);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 134px;
+    height: 42px;
+    line-height: calc(18 / 14);
+  }
 
   &:hover {
     border: 2px solid #0a8817;
@@ -101,13 +149,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 154px;
-  height: 40px;
 
   font-weight: 600;
-  line-height: calc(17 / 14);
   text-decoration-line: underline;
   color: $accent-color;
+
+  @media screen and (max-width: 1199.9px) {
+    width: 82px;
+    height: 24px;
+    font-size: 8px;
+    line-height: calc(10 / 8);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 154px;
+    height: 40px;
+    line-height: calc(17 / 14);
+  }
+
   &:hover {
     color: #0a8817;
   }
@@ -125,40 +183,90 @@
 
 .thumb__wrap {
   display: block;
-  margin-left: 14px;
-  max-width: 220px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199.9px) {
+    margin-left: 33px;
+    max-width: 151px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 14px;
+    max-width: 220px;
+  }
+}
+
+.thumb__image {
+  @media screen and (max-width: 767.9px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199.9px) {
+    width: 152px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 225px;
+  }
 }
 
 .thumb__text {
-  padding-top: 30px;
-  padding-bottom: 30px;
   display: block;
-  font-size: 14px;
   line-height: 140%;
   color: $primary-text-color;
+
+  @media screen and (max-width: 767.9px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.9px) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 14px;
+  }
 }
 
 .thumb__svg {
   display: block;
+  width: 40px;
+  height: 16px;
   fill: $white;
+
+  &:hover {
+    width: 50px;
+  }
+  &:focus {
+    width: 50px;
+    border: 3px solid #131313;
+  }
 }
 
 .bg-image-corn {
   position: absolute;
 
+  height: 350px;
+  bottom: -57px;
+  left: 31px;
+
+  @media screen and (min-width: 766.9px) and (max-width: 767.9px) {
+    height: 305px;
+    bottom: -38px;
+    left: 44px;
+  }
   @media screen and (min-width: 768px) and (max-width: 1199.9px) {
-    height: 683px;
-    bottom: -84px;
-    left: 232px;
+    height: 475px;
+    bottom: -59px;
+    left: 364px;
   }
   @media screen and (min-width: 1200px) {
-    max-width: 650px;
-    bottom: -100px;
+    // width: 650px;
+    // bottom: -100px;
+    // left: 550px;
+    height: 785px;
+    bottom: -103px;
     left: 550px;
   }
-
-
-
 }
 
 .bg-image-dots {
