@@ -203,11 +203,13 @@
     height: 24px;
     font-size: 8px;
     line-height: calc(10 / 8);
+    margin-right: 8px;
   }
   @media screen and (min-width: 1200px) {
     width: 134px;
     height: 42px;
     line-height: calc(18 / 14);
+    margin-right: 12px;
   }
 
   &:hover {
