@@ -1,4 +1,163 @@
-.cow-img {
-  //   border: 5px solid #fff;
+.about {
+  padding-top: 60px;
+}
+
+.about__label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  text-transform: uppercase;
+
+  margin-bottom: 12px;
+}
+
+.about__title {
+  font-family: 'Seymour One', sans-serif;
+  font-size: 30px;
+  line-height: 1.3;
+  text-align: center;
+  text-transform: uppercase;
+
+  margin-bottom: 32px;
+}
+
+.circle-wrap {
+  display: flex;
+}
+
+.circle {
+  position: relative;
+
+  margin: 0 auto;
+  width: 278px;
+  height: 278px;
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
   border-radius: 50%;
+
+  margin-bottom: 62px;
+}
+
+.circle ::before {
+  position: absolute;
+  content: '';
+  background-color: #fff;
+  background-image: url(../images/made/michael-martinelli-_nLlvmclDkc-unsplash\ 1.png);
+  min-width: 200px;
+  min-height: 200px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+// .cow-img {
+//   position: absolute;
+//   top: 22px;
+
+//   border-radius: 50%;
+// }
+
+.about-paragraphs {
+}
+
+.about-paragraphs__txt {
+  margin: 0 auto;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.8;
+  text-align: center;
+
+  padding-left: 35px;
+  padding-right: 35px;
+
+  &:last-child {
+    margin-bottom: 20px;
+  }
+}
+
+.about__button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 12px 34px;
+  margin: 0 auto;
+  margin-bottom: 42px;
+
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.3;
+
+  background: #f8d24e;
+  border-radius: 10px;
+}
+
+.advantages {
+}
+.recipe {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  // gap: 94px;
+  padding-bottom: 60px;
+}
+
+.recipe__wrap {
+  height: 166px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.recipe__item {
+  &::before {
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 50px;
+
+    left: 50%;
+    bottom: 10px;
+
+    transform: translatex(-50%);
+    transform: translateY(50%);
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--cow::before {
+    background-image: url(../images/made/cow-adv-icon.png);
+  }
+
+  &--weight::before {
+    background-image: url(../images/made/weight-adv-icon.png);
+  }
+
+  &--ice-cone::before {
+    background-image: url(../images/made/ice\ crema-adv-img.png);
+  }
+}
+.recipe__number {
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  text-transform: uppercase;
+
+  margin-bottom: 18px;
+}
+.recipe__txt {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  text-align: center;
 }
