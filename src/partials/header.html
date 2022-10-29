@@ -1,5 +1,5 @@
 <header class="header container" id="hd">
-  <div class="header__container">
+  <div class="header__wrap">
     <a class="logo__link" href="./index.html">
       <svg class="logo__svg" width="60" height="65">
         <use href="./images/header/icons.svg#logo"></use>
@@ -24,10 +24,16 @@
     </nav>
 
     <div class="mobile">
-      <a href="#" class="mobile__link">
+      <button
+        type="button"
+        class="mobile-menu__btn js-open-menu"
+        aria-expanded="false"
+        aria-controls="menu-container"
+      >
         <svg class="mobile__svg" width="32" height="32">
-          <use href="./images/header/icons.svg#burger"></use></svg
-      ></a>
+          <use href="./images/header/icons.svg#burger"></use>
+        </svg>
+      </button>
     </div>
 
     <button class="header__button">
@@ -35,12 +41,48 @@
       <svg class="button__svg" width="12" height="12">
         <use href="./images/header/icons.svg#frame-45"></use>
       </svg>
-      <!-- <img
-      class="button__pic"
-      src="./images/header/frame-45.png"
-      alt="pointer"
-      width="12"
-  /> -->
     </button>
   </div>
 </header>
+
+<!--<Мобільне меню>-->
+<div class="backdrop-mob js-menu-container" id="menu-container">
+  <div class="mob-menu">
+    <div class="mob-menu__wrap">
+      <a class="mob-menu__link" href="./index.html">
+        <svg class="mob-menu__logo" width="60" height="65">
+          <use href="./images/header/icons.svg#logo"></use>
+        </svg>
+      </a>
+      <button class="mob-menu__btn mob-menu__close js-close-menu">
+        <svg width="32" height="32" class="mob-menu__close-svg">
+          <use href="./images/header/icons.svg#icon-ep_close"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="mob-menu__nav">
+      <ul class="mob-menu__list">
+        <li class="mob-menu__item">
+          <a href="#" class="mob-menu__link">Home</a>
+        </li>
+        <li class="mob-menu__item">
+          <a href="#about" class="mob-menu__link">How it’s made?</a>
+        </li>
+        <li class="mob-menu__item">
+          <a href="#product" class="mob-menu__link">Our products</a>
+        </li>
+        <li class="mob-menu__item">
+          <a href="#location" class="mob-menu__link">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <button class="mob-menu__button">
+      Buy now
+      <svg class="button__svg" width="12" height="12">
+        <use href="./images/header/icons.svg#frame-45"></use>
+      </svg>
+    </button>
+  </div>
+</div>
