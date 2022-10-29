@@ -2,15 +2,13 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 61px;
-  padding-top: 12px;
   @media screen and (max-width: 767.9px) {
-    max-width: 320px;
+    max-width: 480px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199.9px) {
     padding-left: 32px;
     padding-right: 32px;
-    padding-top: 20px;
     padding-bottom: 40px;
   }
   @media screen and (min-width: 1200px) {
@@ -28,6 +26,14 @@
 .logo__link {
   width: 60px;
   height: 65px;
+
+  @media screen and (max-width: 767.9px) {
+    margin-left: 3px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.9px) {
+    margin-left: 3px;
+  }
 }
 .logo__svg {
   width: 100%;
@@ -68,8 +74,14 @@
     display: flex;
     align-items: center;
   }
+
+  @media screen and (max-width: 767.9px) {
+    margin-top: 4px;
+    margin-right: 5px;
+  }
+
   @media screen and (min-width: 768px) and (max-width: 1199.9px) {
-    margin-left: auto;
+    margin-top: 17px;
     margin-right: 32px;
   }
 
@@ -122,6 +134,10 @@
   @media screen and (max-width: 767.9px) {
     display: none;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.9px) {
+    margin-top: 12px;
+  }
 }
 
 // -----------------<Мобільне меню>
@@ -163,23 +179,16 @@
   height: 100vh;
 
   @media screen and (max-width: 767.9px) {
-    max-width: 328px;
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.9px) {
+    max-width: 734px;
   }
 }
 
 .mob-menu__wrap {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 12px;
-  padding-left: 31px;
-  padding-right: 20px;
-
-  @media screen and (min-width: 768px) and (max-width: 1199.9px) {
-    padding-top: 20px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
 }
 
 .mob-menu__nav {
@@ -196,6 +205,16 @@
   flex-direction: column;
   gap: 32px;
   margin-bottom: 111px;
+}
+
+.mob-menu__logo {
+  @media screen and (max-width: 767.9px) {
+    margin-left: 13px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.9px) {
+    margin-left: 3px;
+  }
 }
 
 .mob-menu__link {
@@ -222,10 +241,17 @@
 
 .mob-menu__close {
   fill: $primary-text-color;
-  padding-top: 16px;
+
+  @media screen and (max-width: 767.9px) {
+    margin-top: 10px;
+    margin-right: 6px;
+    margin-left: auto;
+  }
 
   @media screen and (min-width: 768px) and (max-width: 1199.9px) {
-    padding-top: 32px;
+    margin-top: 26px;
+    margin-right: 6px;
+    margin-left: auto;
   }
 
   border: none;
