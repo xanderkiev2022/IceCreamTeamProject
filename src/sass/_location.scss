@@ -48,11 +48,10 @@
     width: 280px;
     // width: 100%;
     height: 412px;
-    padding: 40px 32px;
+    padding: 24px 32px;
     background: $primary-text-color;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
-    // margin-bottom: 32px;
     @media screen and(min-width: 768px) {
         padding: 40px 24px;
         width: calc((100% - 32px) / 3);
@@ -99,7 +98,6 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
-    // margin-bottom: 24px;
 }
 
 .location__town {
@@ -142,7 +140,6 @@
     width: 100%;
     height: 1px;
     background: #E1E1E1;
-    // margin-bottom: 24px;
 }
 
 .location__timing {
@@ -154,8 +151,6 @@
 .location__item {
     display: flex;
     flex-direction: column;
-    // &:last-child {margin-bottom: 24px;}
-
 }
 
 .location__week {
@@ -187,11 +182,6 @@
         line-height: 1.88; 
     }
 }
-
-// .location__contact {
-//     display: flex;
-//     flex-direction: column;
-// }
 
 .location__contact-item {
     font-weight: 500;
