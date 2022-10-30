@@ -1,0 +1,156 @@
+.modal__backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+.modal__franchise {
+    width: 95%;
+    min-width: 280px;
+    //   min-height: подставляем свое значение;
+      padding: 28px;
+
+    background-color: $primary-text-color;
+    border: 2px solid #F8D24E;
+    border-radius: 10px;
+
+    opacity: 1;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+     @media screen and(min-width: 768px) {
+        max-width: 568px;
+        padding: 32px 60px;
+    }
+    
+    .backdrop.is-hidden & {
+        transform: translate(-50%, -50%) scale(0.9) rotate(50deg);
+    }
+}
+
+.franchise__btn-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    color: $secondary-text-color;
+    fill: $secondary-text-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    @media screen and(min-width: 768px) {
+        top: 8px;
+        right: 8px;
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.franchise__icon {
+    fill: $secondary-text-color;
+    color: $secondary-text-color;
+}
+
+.franchise__title-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    @media screen and(min-width: 768px) {
+        gap: 24px;
+    }
+}
+
+.franchise__title {
+    width: 322px;
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: $secondary-text-color;
+    @media screen and(min-width: 768px) {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+}
+
+.franchise__paragraf {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    color: $secondary-text-color;
+    @media screen and(min-width: 768px) {
+        font-size: 16px;
+    }
+    
+}
+
+.franchise-form {
+    padding-top: 24px;
+    display: flex;
+    // flex-wrap: wrap;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    @media screen and(min-width: 768px) {
+        padding-top: 10px;
+        gap: 16px;
+    }
+}
+
+.franchise__input {
+    min-width: 224px;
+    height: 32px;
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84A178;
+    border-radius: 10px;
+    @media screen and(min-width: 768px) {
+        min-width: 368px;
+        height: 42px;
+    }
+
+    &--comment {
+        height: 64px;
+        @media screen and(min-width: 768px) {
+            height: 84px;
+        }
+    }
+}
+
+.franchise__btn {
+    min-width: 114px;
+    height: 42px;
+    padding: 12px 34px;
+    background-color: #F8D24E;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    color: $secondary-text-color;
+    @media screen and(min-width: 768px) {
+        min-width: 121px;
+        font-size: 14px;
+        line-height: 1.21;
+    }    
+
+    &:hover {
+        background-color: #0A8817;
+    }
+    &:focus {
+        background-color: #0A8817;
+        color: $primary-text-color;
+    }
+}
+
+
