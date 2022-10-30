@@ -16,7 +16,7 @@
                         </h3>
                         <p class="products__item-description">Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer</p>
                     </div>  
-                    <button class="products__item-button">
+                    <button class="products__item-button" data-modal-open>
                             <svg class="products__item-svg" >
                                 <use  class="product__item-use" href="./images/product/iconsproduct.svg#icon-strelka">
                                 </use>
@@ -33,7 +33,7 @@
                         </h3>
                         <p class="products__item-description">Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor enhancers</p>
                     </div>
-                    <button class="products__item-button">
+                    <button class="products__item-button" data-modal-open>
                         <svg class="products__item-svg">
                             <use  class="product__item-use" href="./images/product/iconsproduct.svg#icon-strelka">
                             </use>
@@ -49,7 +49,7 @@
                         </h3>
                         <p class="products__item-description">Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other sweets of your choice</p>
                     </div>
-                    <button class="products__item-button">
+                    <button class="products__item-button" data-modal-open>
                         <svg class="products__item-svg">
                             <use  class="product__item-use" href="./images/product/iconsproduct.svg#icon-strelka">
                             </use>
@@ -61,3 +61,68 @@
     </div>
 </div>
 </section>
+
+
+<!----------------------- modal -------------------------->
+
+<div class="modal__backdrop is-hidden" data-modal>
+    <div class="products__modal">
+        <button type="button" class="button__close-products" data-modal-close ><svg class="icon__close-products" width="20" height="20">
+                <use href="./images/product/iconsproduct.svg#icon-close-black"></use>
+            </svg></button>
+        <form name="form" class="modal__form-products" action="">
+
+            <p class="modal__header-products">Chololate icecream</p>
+            <div class="modal__proructs-chocolad">
+                <ul class="chocolad-list">
+                    <li class="chocolad-iteam">kcal
+                        <span class="chocolad-desc">320</span>
+                    </li>
+                    <li class="chocolad-iteam">Prot..
+                        <span class="chocolad-desc">4g</span>
+                    </li>
+                    <li class="chocolad-iteam">Fats
+                        <span class="chocolad-desc">8,2g</span>
+                    </li>
+                    <li class="chocolad-iteam">Carbs
+                        <span class="chocolad-desc">40,4g</span>
+                    </li>
+                </ul>
+            
+            </div>
+            <div class="modal__proructs-ingridients">
+                <p class="ingridients__title">Ingredients</p>
+                <ul class="ingridients__list">
+                    <li class="ingridients__item">Milk<span class="ingridients__desc">100 ml</span></li>
+                    <li class="ingridients__item">Belgian chocolate<span class="ingridients__desc">20g</span></li>
+                    <li class="ingridients__item">Cream<span class="ingridients__desc"></span>150 ml</li>
+                    <li class="ingridients__item">Cocoa powder<span class="ingridients__desc">30g</span></li>
+                    <li class="ingridients__item">Sugar<span class="ingridients__desc"></span>40g</li>
+                    <li class="ingridients__item">Vanilla sugar<span class="ingridients__desc">10g</span></li>
+                </ul>
+
+            
+            </div>
+            <div class="modal__proructs-info">
+                <label class="form__field-products" for="name">
+                    <input class="form__field-text" type="text" name="name" id="name" autofocus 
+                    placeholder="Name">
+                </label>
+                <label class="form__field-products" for="tel">
+                    <input class="form__field-text" type="tel" name="tel" id="tel"
+                        placeholder="Phone">
+                </label>
+                <label class="form__field-products" for="coment">
+                        <textarea class="form__field-text" name="coment" id="coment" rows="3"
+                            placeholder="Comment"></textarea>
+                </label>
+            </div>
+        </form>
+        <button class="modal__products-button" type="submit">Submit</button>
+    </div>
+</div>     
+
+
+<script src="./js/modal.js"></script>  
+
+
