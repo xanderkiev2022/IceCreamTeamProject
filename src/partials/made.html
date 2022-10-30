@@ -6,28 +6,28 @@
       <div class="circle-wrap">
         <div class="circle"></div>
       </div>
-      <div class="about-paragraphs">
-        <p class="about-paragraphs__txt">
+      <ul class="about-paragraphs">
+        <li class="about-paragraphs__txt">
           Ice is a place where you will become not only a little happier, but
           also healthier. Health is the main value for us, and we follow it when
           creating our handmade desserts.
-        </p>
-        <p class="about-paragraphs__txt">
+        </li>
+        <li class="about-paragraphs__txt">
           We use traditional recipes and 100% natural ingredients. Our products
           are so natural that they can be given to children from the age of
           three years. Sweets lovers can expect 55 types of ice cream, 15 types
           of coffee and 23 milkshakes.
-        </p>
-        <p class="about-paragraphs__txt about-paragraphs__txt--mob">
+        </li>
+        <li class="about-paragraphs__txt about-paragraphs__txt--mob">
           This is enough to choose ice cream and coffee for any mood!
-        </p>
-        <button class="about__button" type="button">
+        </li>
+        <button class="about__button" type="button" data-modal-open>
           Read more
-          <svg class="about-icon" width="14" height="14">
-            <use href="./images/made/icons.svg#icon-arrw"></use>
+          <svg class="about-icon" width="12" height="12">
+            <use href="./images/made/icons-made.svg#icon-Frame-32"></use>
           </svg>
         </button>
-      </div>
+      </ul>
     </div>
   </div>
 </section>
@@ -63,3 +63,29 @@
     </ul>
   </div>
 </section>
+
+<!-- Modal made -->
+<div class="modal__backdrop is-hidden" data-modal>
+  <div class="modal-made">
+    <button class="modal-made__cls-btn" type="button" data-modal-close>
+      <svg class="made-cls-icon" width="20" height="20">
+        <use href="./images/made/icons-made.svg#icon-made-cls"></use>
+      </svg>
+    </button>
+    <p class="modal-made__name">How it’s made?</p>
+    <iframe
+      class="made-modal__video"
+      height="205"
+      src="https://www.youtube.com/embed/H5Iz-EJT5zI"
+      title="How it’s made?"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <p class="modal-made__description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+    </p>
+  </div>
+</div>
