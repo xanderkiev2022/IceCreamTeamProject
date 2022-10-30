@@ -102,6 +102,7 @@
     // flex-wrap: wrap;
     flex-direction: column;
     gap: 12px;
+    align-items: center;
     @media screen and(min-width: 768px) {
         padding-top: 10px;
         gap: 16px;
@@ -109,13 +110,13 @@
 }
 
 .franchise__input {
-    width: 224px;
+    min-width: 224px;
     height: 32px;
     background: rgba(248, 210, 78, 0.1);
     border: 1px solid #84A178;
     border-radius: 10px;
     @media screen and(min-width: 768px) {
-        width: 368px;
+        min-width: 368px;
         height: 42px;
     }
 
@@ -125,10 +126,6 @@
             height: 84px;
         }
     }
-}
-
-.franchise__box-btn {
-    display: flex;
 }
 
 .franchise__btn {
