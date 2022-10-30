@@ -1,308 +1,293 @@
-// -------------------------------------------------Modal-isecream-----------------------------
-
 .modal__backdrop {
-    width: 100%;
-    height: 100%;
-    overflow-y: scroll;
-    opacity: 1;
-    z-index: 2;
-    background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
 
-    position: fixed;
-    top: 0;
-    left: 0;
+  opacity: 1;
 
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  position: fixed;
+  top: 0;
+  left: 0;
 
-.backdrop__products.is-hidden {
-    // visibility: hidden;
+  z-index: 2;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.is-hidden {
     opacity: 0;
     pointer-events: none;
 
-}
-
-.backdrop.is-hidden .modal {
-    opacity: 0;
-    transform: translate(-50%, -50%) translateY(-500px);
+    .products__modal {
+      opacity: 0;
+      transform: translate(-50%, -50%) translateY(-500px);
+    }
+  }
 }
 
 .products__modal {
-    padding: 30px 20px;
-    width: 95%;
-    background: #FCFCFC;
-    border: 2px solid #F8D24E;
-    border-radius: 10px;
+  padding: 30px 20px;
+  width: 95%;
+  max-width: 450px;
+  max-height: 990px;
 
-    position: absolute;
-    top: 50%;
-    left: 50%;
+  background: #fcfcfc;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
 
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  position: absolute;
+  top: 67%;
+  left: 50%;
 
-    opacity: 1;
-    transform: translate(-50%, -50%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+  transform: translate(-50%, -50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    width: 320px;
-
-    @media screen and (min-width: 480px) {
-        width: 450px;
-        height: auto;
-
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: 570px;
-        height: auto;
-    }
+  @media screen and (min-width: 768px) {
+    max-width: 568px;
+    height: auto;
+  }
 }
 
 .button__close-products {
-    width: 20px;
-    height: 20px;
-    z-index: 5;
-    border-radius: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: $white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    cursor: pointer;
-    position: absolute;
-    top: 30px;
-    right: 20px;
-    padding: 0;
-
+  width: 20px;
+  height: 20px;
+  z-index: 5;
+  border-radius: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  cursor: pointer;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  padding: 0;
 }
 
 .icon__close-products {
-    display: block;
-    fill: $primary-bg-color;
-    transition-property: fill;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
+  display: block;
+  fill: $primary-bg-color;
+  transition-property: fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .modal__form-products {
-    margin-bottom: 30px;
-    width: 100%;
+  margin-bottom: 30px;
+  width: 100%;
 
-    @media screen and (min-width: 480px) {}
+  @media screen and (min-width: 480px) {
+  }
 }
 
 .modal__header-products {
-    text-align: center;
-    font-family: 'Seymour One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.4;
-    color: $secondary-text-color;
-    margin-bottom: 22px;
+  text-align: center;
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  color: $secondary-text-color;
+  margin-bottom: 22px;
 
-    @media screen and (min-width: 1200px) {
-        margin-bottom: 24px;
-    }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 24px;
+  }
 }
 
 .modal__proructs-chocolad {
-    &:before {
-        background-image: url(../images/product/choc.png);
+  &:before {
+    background-image: url(../images/product/choc.png);
+  }
+
+  &:before {
+    position: absolute;
+    content: '';
+
+    width: 180px;
+    height: 183px;
+    right: 50%;
+    transform: translateX(50%);
+
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 24px;
+    top: 98px;
+
+    @media screen and (min-width: 480px) {
+      top: 72px;
     }
-
-    &:before {
-        position: absolute;
-        content: '';
-
-        width: 180px;
-        height: 183px;
-        right: 50%;
-        transform: translateX(50%);
-
-        background-color: transparent;
-        background-size: contain;
-        background-repeat: no-repeat;
-        margin-bottom: 24px;
-        top: 98px;
-
-        @media screen and (min-width: 480px) {
-            top: 72px;
-        }
-    }
+  }
 }
 
 .chocolad__list {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 184px;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 184px;
+  position: relative;
 }
 
 .chocolad__iteam {
-    font-weight: 400;
-    font-size: 10px;
-    line-height: calc(12/10);
-    display: flex;
-    align-items: center;
-    text-align: center;
-    border: 2px solid #9CBE8F;
-    border-radius: 40px;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    width: 53px;
-    height: 72px;
-    padding-bottom: 5px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: calc(12 / 10);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border: 2px solid #9cbe8f;
+  border-radius: 40px;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  width: 53px;
+  height: 72px;
+  padding-bottom: 5px;
 
-    color: $secondary-text-color;
+  color: $secondary-text-color;
 
-    @media screen and (min-width: 1200px) {
-        width: 65px;
-        height: 90px;
-        font-size: 12px;
-        line-height: calc(15/12);
-    }
+  @media screen and (min-width: 1200px) {
+    width: 65px;
+    height: 90px;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+  }
 }
 
 .chocolad__desc {
-    font-weight: 500;
-    font-size: 10px;
-    line-height: 2.8;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 2.8;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 
-    color: $secondary-text-color;
+  color: $secondary-text-color;
 
-    background: #9CBE8F;
-    border: 2px solid #9CBE8F;
-    box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
-    border-radius: 50%;
-    width: 43px;
-    height: 43px;
+  background: #9cbe8f;
+  border: 2px solid #9cbe8f;
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+  border-radius: 50%;
+  width: 43px;
+  height: 43px;
 
-    @media screen and (min-width: 1200px) {
-        font-size: 12px;
-        line-height: calc(28/12);
-        width: 55px;
-        height: 55px;
-    }
+  @media screen and (min-width: 1200px) {
+    font-size: 12px;
+    line-height: calc(28 / 12);
+    width: 55px;
+    height: 55px;
+  }
 }
 
 .modal__proructs-ingridients {
-    margin-top: 29px;
+  margin-top: 29px;
 
-    @media screen and (min-width: 1200px) {
-        margin-top: 48px;
-    }
+  @media screen and (min-width: 1200px) {
+    margin-top: 48px;
+  }
 }
 
 .ingridients__title {
-    text-align: center;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: calc(28/20);
-    color: $secondary-text-color;
-    margin-bottom: 24px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(28 / 20);
+  color: $secondary-text-color;
+  margin-bottom: 24px;
 }
 
 .ingridients__list {
-    display: flex;
-    flex-direction: column;
-    gap: 11px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
 
-    @media screen and (min-width: 1200px) {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+  @media screen and (min-width: 1200px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .ingridients__item {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.76;
-    color: $secondary-text-color;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.76;
+  color: $secondary-text-color;
 
-    display: flex;
-    justify-content: space-between;
-
+  display: flex;
+  justify-content: space-between;
 }
 
 .ingridients__desc {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.76;
-    color: $secondary-text-color;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.76;
+  color: $secondary-text-color;
 }
 
-
-
-
-
 .modal__proructs-info {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 
-    @media screen and (min-width: 1200px) {
-        padding-left: 80px;
-        padding-right: 80px;
-    }
+  @media screen and (min-width: 1200px) {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 }
 
 .form__field-products {
-    background: rgba(248, 210, 78, 0.1);
-    border: 1px solid #84A178;
-    border-radius: 10px;
-    width: 100%;
-    padding: 11px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  width: 100%;
+  padding: 11px;
 }
 
 .form__field-text {
-    border-color: transparent;
-    background-color: transparent;
+  border-color: transparent;
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 1.4;
+  color: $secondary-text-color;
+  resize: none;
+  width: 100%;
+
+  &::placeholder {
     font-size: 14px;
     line-height: 1.4;
     color: $secondary-text-color;
-    resize: none;
     width: 100%;
-
-    &::placeholder {
-        font-size: 14px;
-        line-height: 1.4;
-        color: $secondary-text-color;
-        width: 100%;
-    }
+  }
 }
 
 .modal__products-button {
-    width: 132px;
-    height: 42px;
-    background-color: #F8D24E;
-    border-radius: 10px;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: calc(17/14);
-    text-align: center;
+  width: 132px;
+  height: 42px;
+  background-color: #f8d24e;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  text-align: center;
 
-    color: $secondary-text-color;
+  color: $secondary-text-color;
 
-    &:hover {
-        background-color: #0A8817;
-    }
+  &:hover {
+    background-color: #0a8817;
+  }
 
-    &:focus {
-        background-color: #0A8817;
-        color: $white;
-
-    }
+  &:focus {
+    background-color: #0a8817;
+    color: $white;
+  }
 }

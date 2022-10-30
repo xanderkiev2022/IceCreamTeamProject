@@ -97,7 +97,6 @@
   @media screen and(min-width: 1200px) {
     & ::before {
       top: 39px;
-      right: 1px;
       background-image: url(../images/made/cow-desc.png);
     }
 
@@ -105,7 +104,6 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       & ::before {
-        right: 1px;
         top: 39px;
         background-image: url(../images/made/cow-desc2x.png);
       }

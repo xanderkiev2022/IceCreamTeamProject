@@ -1,4 +1,3 @@
-// Modal
 .modal__backdrop {
   width: 100%;
   height: 100%;
@@ -19,21 +18,22 @@
     opacity: 0;
     pointer-events: none;
 
-    .modal__map {
+    .modal__franchise {
       opacity: 0;
       transform: translate(-50%, -50%) translateY(-500px);
     }
   }
 }
 
-.modal__map {
+.modal__franchise {
   width: 95%;
-  max-width: 568px;
-  min-height: 449px;
-  padding: 32px 60px;
+  max-width: 450px;
+  min-height: 674px;
+  //   min-height: подставляем свое значение;
+  padding: 28px;
 
-  background-color: #fcfcfc;
-  border: 2px solid $accent-color;
+  background-color: $primary-text-color;
+  border: 2px solid #f8d24e;
   border-radius: 10px;
 
   opacity: 1;
@@ -45,54 +45,131 @@
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and(min-width: 768px) {
+    max-width: 568px;
+    min-height: 668px;
+    padding: 32px 60px;
+  }
 }
 
-.map__close {
-  display: inline-flex;
-  border: transparent;
-  border-radius: 50px;
-
+.franchise__btn-close {
   position: absolute;
   top: 20px;
   right: 20px;
+  width: 20px;
+  height: 20px;
+  color: $secondary-text-color;
+  fill: $secondary-text-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  @media screen and(min-width: 768px) {
+    top: 8px;
+    right: 8px;
+    width: 16px;
+    height: 16px;
+  }
 }
 
-.map__title {
-  margin-bottom: 32px;
-  font-family: 'Seymour One', sans-serif;
+.franchise__icon {
+  fill: $secondary-text-color;
+  color: $secondary-text-color;
+}
+
+.franchise__title-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  @media screen and(min-width: 768px) {
+    gap: 24px;
+  }
+}
+
+.franchise__title {
+  width: 322px;
+  font-family: 'Seymour One';
+  font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 1.4;
+  font-size: 16px;
+  line-height: 1.5;
   text-align: center;
   color: $secondary-text-color;
+  @media screen and(min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.4;
+  }
 }
 
-iframe {
-  display: block;
-  border-width: 0;
-}
-
-.map__content {
-  width: 100%;
-  min-height: 260px;
-  margin-bottom: 32px;
-  border-radius: 10px;
-}
-
-.map__link {
-  display: flex;
-  margin: 0 auto;
-}
-
-.map__open {
-  display: inline-flex;
-  margin: 0 auto;
-  padding: 12px 34px;
-  font-weight: 600;
+.franchise__paragraf {
+  margin-bottom: 24px;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 1.21;
-
+  line-height: 1.4;
   color: $secondary-text-color;
-  background-color: $accent-color;
+  @media screen and(min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.franchise-form {
+  padding-top: 24px;
+  display: flex;
+  // flex-wrap: wrap;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  @media screen and(min-width: 768px) {
+    padding-top: 10px;
+    gap: 16px;
+  }
+}
+
+.franchise__input {
+  min-width: 224px;
+  height: 32px;
+  padding: 8px 12px;
+
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
   border-radius: 10px;
+  @media screen and(min-width: 768px) {
+    min-width: 368px;
+    height: 42px;
+  }
+
+  &--comment {
+    height: 64px;
+    @media screen and(min-width: 768px) {
+      height: 84px;
+    }
+  }
+}
+
+.franchise__btn {
+  min-width: 114px;
+  height: 42px;
+  padding: 12px 34px;
+  background-color: #f8d24e;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  color: $secondary-text-color;
+  @media screen and(min-width: 768px) {
+    min-width: 121px;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+
+  &:hover {
+    background-color: #0a8817;
+  }
+  &:focus {
+    background-color: #0a8817;
+    color: $primary-text-color;
+  }
 }
