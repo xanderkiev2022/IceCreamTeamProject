@@ -1,0 +1,42 @@
+<!----------------------- modal-buy now------------------------->
+
+<div class="modal__backdrop is-hidden">
+    <div class="buy__modal">
+        <button type="button" class="button__close-buy">
+            <svg class="icon__close-buy" width="20" height="20">
+                <use href="./images/product/iconsproduct.svg#icon-close-black"></use>
+            </svg>
+        </button>
+        <form name="form" class="modal__form-buy" action="">
+            <p class="modal__header-buy">Buy now</p>
+            <div class="modal__buy">
+                <ul class="buy__list">
+                    <li class="buy__iteam">
+                        <span class="buy__desc">ice cream</span>
+                    </li>
+                    <li class="buy__iteam">
+                        <span class="buy__desc">ice coffee</span>
+                    </li>
+                    <li class="buy__iteam">
+                        <span class="buy__desc">milkshake</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal__buy-info">
+                <label class="form__field-buy" for="name">
+                    <input class="buy__field-text" type="text" name="name" id="name" autofocus placeholder="Name" />
+                </label>
+                <label class="form__field-buy" for="tel">
+                    <input class="buy__field-text" type="tel" name="tel" id="tel" placeholder="Phone" />
+                </label>
+                <label class="form__field-buy" for="coment">
+                    <textarea class="buy__field-text" name="coment" id="coment" rows="3"
+                        placeholder="Comment"></textarea>
+                </label>
+            </div>
+        </form>
+        <button class="modal__buy-button" type="submit">Submit</button>
+    </div>
+</div>
+
+<script src="./js/modal.js"></script>
