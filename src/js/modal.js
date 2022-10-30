@@ -1,8 +1,24 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[data-modal-open]'),
-    closeModalBtn: document.querySelector('[data-modal-close]'),
-    modal: document.querySelector('[data-modal]'),
+    openModalBtn: document.querySelector('[data-modal-open-slider]'),
+    closeModalBtn: document.querySelector('[data-modal-close-slider]'),
+    modal: document.querySelector('[data-modal-slider]'),
+
+    openModalBtn: document.querySelector('[data-modal-open-slider]'),
+    closeModalBtn: document.querySelector('[data-modal-close-slider]'),
+    modal: document.querySelector('[data-modal-slider]'),
+
+    openModalBtn: document.querySelector('[data-modal-open-slider]'),
+    closeModalBtn: document.querySelector('[data-modal-close-slider]'),
+    modal: document.querySelector('[data-modal-slider]'),
+
+    openModalBtn: document.querySelector('[data-modal-open-slider]'),
+    closeModalBtn: document.querySelector('[data-modal-close-slider]'),
+    modal: document.querySelector('[data-modal-slider]'),
+
+    openModalBtn: document.querySelector('[data-modal-open-slider]'),
+    closeModalBtn: document.querySelector('[data-modal-close-slider]'),
+    modal: document.querySelector('[data-modal-slider]'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);

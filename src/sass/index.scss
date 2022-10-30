@@ -1,15 +1,7 @@
+// Base
 @import './base/common';
 @import './base/reset';
 @import './base/vars';
-@import './container';
-@import './footer';
-@import './header';
-@import './hero';
-@import './location';
-@import './made';
-@import './product';
-@import './slider';
-@import './modal-by-now.scss';
 
 // font-family: 'Seymour One', sans-serif;
 
@@ -23,3 +15,18 @@ body {
   color: $primary-text-color;
   background-color: $primary-bg-color;
 }
+
+// Partials
+@import './container';
+@import './footer';
+@import './header';
+@import './hero';
+@import './location';
+@import './made';
+@import './product';
+@import './slider';
+@import './modal-1';
+@import './modal-2';
+@import './modal-3';
+@import './modal-4';
+@import './modal-5';
