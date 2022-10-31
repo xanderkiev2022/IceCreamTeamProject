@@ -312,15 +312,22 @@
   display: block;
   width: 40px;
   height: 16px;
+
   fill: $white;
   transform: scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
+    width: 45px;
+    height: 25px;
     transform: scale(1.1);
   }
-  &:focus {
-    transform: scale(1.15);
+}
+.thumb__link {
+  &:focus .thumb__svg {
+    width: 50px;
+    height: 30px;
+    transform: scale(1.1);
   }
 }
 
