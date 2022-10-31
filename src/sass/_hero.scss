@@ -88,11 +88,13 @@
     padding-bottom: 65px;
   }
 }
+
 .hero__wrap {
   position: relative;
   display: flex;
   justify-content: space-between;
 }
+
 .hero__title {
   font-family: 'Seymour One';
   text-transform: uppercase;
@@ -135,8 +137,7 @@
     display: none;
   }
 }
-.retail__item {
-}
+
 .retail__amount {
   font-style: normal;
   font-weight: 900;
@@ -315,7 +316,7 @@
   transform: scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover{
+  &:hover {
     transform: scale(1.1);
   }
   &:focus {
@@ -357,4 +358,3 @@
   bottom: 0;
   left: 0;
 }
-
