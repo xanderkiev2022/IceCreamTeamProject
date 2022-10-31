@@ -2037,7 +2037,7 @@ hr {
   border: 2px solid #f8d24e;
   border-radius: 10px;
   position: absolute;
-  top: 60%;
+  top: 80%;
   left: 50%;
   position: relative;
   display: flex;
@@ -2068,7 +2068,7 @@ hr {
   margin-left: auto;
   cursor: pointer;
   position: absolute;
-  top: 30px;
+  top: 20px;
   right: 20px;
   padding: 0;
 }
@@ -2304,7 +2304,7 @@ hr {
   border: 2px solid #f8d24e;
   border-radius: 10px;
   position: absolute;
-  top: 67%;
+  top: 80%;
   left: 50%;
   position: relative;
   display: flex;
@@ -2380,7 +2380,7 @@ hr {
   background-size: contain;
   background-repeat: no-repeat;
   margin-bottom: 24px;
-  top: 98px;
+  top: 68px;
 }
 @media screen and (min-width: 480px) {
   .modal__proructs-chocolad:before {
