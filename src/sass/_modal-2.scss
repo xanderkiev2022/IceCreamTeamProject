@@ -26,10 +26,10 @@
 }
 
 .products__modal {
-  padding: 30px 20px;
+  padding: 32px 20px;
   width: 95%;
   max-width: 450px;
-  max-height: 990px;
+  // max-height: 990px;
 
   background: #fcfcfc;
   border: 2px solid #f8d24e;
@@ -59,7 +59,7 @@
   height: 20px;
   z-index: 5;
   border-radius: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: $secondary-text-color;
   background-color: $white;
   display: flex;
   justify-content: center;
@@ -98,7 +98,7 @@
   color: $secondary-text-color;
   margin-bottom: 22px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 24px;
   }
 }
@@ -154,7 +154,7 @@
 
   color: $secondary-text-color;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     width: 65px;
     height: 90px;
     font-size: 12px;
@@ -180,7 +180,7 @@
   width: 43px;
   height: 43px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     font-size: 12px;
     line-height: calc(28 / 12);
     width: 55px;
@@ -191,7 +191,7 @@
 .modal__proructs-ingridients {
   margin-top: 29px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     margin-top: 48px;
   }
 }
@@ -210,7 +210,7 @@
   flex-direction: column;
   gap: 11px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -239,19 +239,13 @@
   flex-direction: column;
   gap: 16px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     padding-left: 80px;
     padding-right: 80px;
   }
 }
 
-.form__field-products {
-  background: rgba(248, 210, 78, 0.1);
-  border: 1px solid #84a178;
-  border-radius: 10px;
-  width: 100%;
-  padding: 11px;
-}
+
 
 .form__field-text {
   border-color: transparent;
@@ -261,7 +255,11 @@
   color: $secondary-text-color;
   resize: none;
   width: 100%;
-
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  width: 100%;
+  padding: 11px;
   &::placeholder {
     font-size: 14px;
     line-height: 1.4;
