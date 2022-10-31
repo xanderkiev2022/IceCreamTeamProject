@@ -29,14 +29,13 @@
   padding: 32px 20px;
   width: 95%;
   max-width: 450px;
-  // max-height: 986px;
 
   background: #fcfcfc;
   border: 2px solid #f8d24e;
   border-radius: 10px;
 
   position: absolute;
-  top: 50%;
+  top: 80%;
   left: 50%;
 
   position: relative;
@@ -50,7 +49,8 @@
 
   @media screen and (min-width: 768px) {
     max-width: 568px;
-    // max-height: 644px;
+    top: 50%;
+    left: 50%;
     height: auto;
   }
 }
@@ -68,14 +68,17 @@
   margin-left: auto;
   cursor: pointer;
   position: absolute;
-  top: 30px;
-  right: 20px;
+  top: 8px;
+  right: 8px;
   padding: 0;
+@media screen and (min-width: 768px) {
+  top: 20px;
+  right: 20px;}
 }
 
 .icon__close-buy {
   display: block;
-  fill: $primary-bg-color;
+  fill: $secondary-text-color;
   transition-property: fill;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
@@ -127,6 +130,7 @@
 
 .buy__iteam {
   padding-top: 65px;
+  min-width: 120px;
   width: 100%;
 }
 .buy__div {
