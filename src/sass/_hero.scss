@@ -358,6 +358,16 @@
     transform: translateX(-50%);
   }
   @media screen and (min-width: 768px) {
+    width: 100%;
+    max-width: 700px;
+    // left: 0;
+    // transform: translateX(0);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+    max-width: 1200px;
+    bottom: -5px;
     // left: 0;
     // transform: translateX(0);
   }
