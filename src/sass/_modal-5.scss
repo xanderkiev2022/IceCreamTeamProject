@@ -65,10 +65,11 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-
+  top: 8px;
+  right: 8px;
   @media screen and(min-width: 768px) {
-    top: 8px;
-    right: 8px;
+    top: 20px;
+    right: 20px;
     width: 16px;
     height: 16px;
   }

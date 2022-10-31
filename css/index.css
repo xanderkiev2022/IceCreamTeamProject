@@ -2068,9 +2068,15 @@ hr {
   margin-left: auto;
   cursor: pointer;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 8px;
+  right: 8px;
   padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .button__close-buy {
+    top: 20px;
+    right: 20px;
+  }
 }
 
 .icon__close-buy {
@@ -2130,6 +2136,7 @@ hr {
 
 .buy__iteam {
   padding-top: 65px;
+  min-width: 120px;
   width: 100%;
 }
 
@@ -2770,11 +2777,13 @@ iframe {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  top: 8px;
+  right: 8px;
 }
 @media screen and (min-width: 768px) {
   .franchise__btn-close {
-    top: 8px;
-    right: 8px;
+    top: 20px;
+    right: 20px;
     width: 16px;
     height: 16px;
   }
