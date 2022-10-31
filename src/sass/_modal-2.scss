@@ -35,7 +35,7 @@
   border-radius: 10px;
 
   position: absolute;
-  top: 80%;
+  top: 89%;
   left: 50%;
 
   position: relative;
@@ -50,6 +50,7 @@
   @media screen and (min-width: 768px) {
     max-width: 568px;
     height: auto;
+    top: 93%;
   }
 }
 
@@ -120,13 +121,11 @@
     background-size: contain;
     background-repeat: no-repeat;
     margin-bottom: 24px;
+    top: 90px;
+@media screen and (min-width: 347px) {
     top: 68px;
-
-    @media screen and (min-width: 480px) {
-      top: 72px;
-    }
-  }
-}
+    
+}}}
 
 .chocolad__list {
   display: flex;

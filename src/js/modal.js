@@ -15,9 +15,54 @@
 
 (() => {
   const refs = {
+    openModalBtn: document.querySelector('[data-modal-open-header-mod]'),
+    closeModalBtn: document.querySelector('[data-modal-close-header-mod]'),
+    modal: document.querySelector('[data-modal-header-mod]'),
+  };
+
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
+  }
+})();
+
+(() => {
+  const refs = {
     openModalBtn: document.querySelector('[data-modal-open-products]'),
     closeModalBtn: document.querySelector('[data-modal-close-products]'),
     modal: document.querySelector('[data-modal-products]'),
+  };
+
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
+  }
+})();
+
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector('[data-modal-open-products-two]'),
+    closeModalBtn: document.querySelector('[data-modal-close-products-two]'),
+    modal: document.querySelector('[data-modal-products-two]'),
+  };
+
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
+  }
+})();
+
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector('[data-modal-open-products-three]'),
+    closeModalBtn: document.querySelector('[data-modal-close-products-three]'),
+    modal: document.querySelector('[data-modal-products-three]'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
