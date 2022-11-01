@@ -25,3 +25,19 @@
     bodyScrollLock.enableBodyScroll(document.body);
   });
 })();
+
+// -- scroll getElement
+const scrollBtn = document.querySelectorAll('[data-scroll]');
+const mobileMenu = document.querySelector('.js-menu-container');
+const mobileMenuItems = document.querySelectorAll('.mob-menu__item a');
+scrollBtn.forEach(function (item) {
+  item.addEventListener('click', function (event) {
+    event.preventDefault();
+
+    const blockId = document.querySelector('#' + this.dataset.scroll);
+    const blockOfset = blockId.offsetTop;
+    window.scrollTo({ top: blockOfset, behavior: 'smooth' });
+
+    mobileMenu.classList.remove('is-open');
+  });
+});

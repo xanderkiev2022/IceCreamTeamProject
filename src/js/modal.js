@@ -1,119 +1,34 @@
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-modal-open-header]'),
-    closeModalBtn: document.querySelector('[data-modal-close-header]'),
-    modal: document.querySelector('[data-modal-header]'),
-  };
+const modalButtons = document.querySelectorAll('[data-modal-button]');
+const allModals = document.querySelectorAll('[data-modal]');
+const modalCloseButtons = document.querySelectorAll('[data-modal-close]');
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+// привязка модального окна к кнопке его вызова
+modalButtons.forEach(function (item) {
+  item.addEventListener('click', function () {
+    // привязываем к кнопке вызова модального окна значение дата атрибута которое соответствует id модалки
+    const modalId = document.querySelector('#' + this.dataset.modalButton);
+    modalId.classList.remove('is-hidden');
 
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
-  }
-})();
+    // отмена закрытия модального окна кликом по его контенту
+    modalId
+      .querySelector('.modal-window')
+      .addEventListener('click', function (event) {
+        event.stopPropagation();
+      });
+  });
+});
 
-// (() => {
-//   const refs = {
-//     openModalBtn: document.querySelector('[data-modal-open-header-mod]'),
-//     closeModalBtn: document.querySelector('[data-modal-close-header-mod]'),
-//     modal: document.querySelector('[data-modal-header-mod]'),
-//   };
+// закрытие модального окна кликом по кнопке внутри его "Закрыть окно"
+modalCloseButtons.forEach(function (item) {
+  item.addEventListener('click', function () {
+    const modal = this.closest('[data-modal]');
+    modal.classList.add('is-hidden');
+  });
+});
 
-//   refs.openModalBtn.addEventListener('click', toggleModal);
-//   refs.closeModalBtn.addEventListener('click', toggleModal);
-
-//   function toggleModal() {
-//     refs.modal.classList.toggle('is-hidden');
-//   }
-// })();
-
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-modal-open-products]'),
-    closeModalBtn: document.querySelector('[data-modal-close-products]'),
-    modal: document.querySelector('[data-modal-products]'),
-  };
-
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
-
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
-  }
-})();
-
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-modal-open-products-two]'),
-    closeModalBtn: document.querySelector('[data-modal-close-products-two]'),
-    modal: document.querySelector('[data-modal-products-two]'),
-  };
-
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
-
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
-  }
-})();
-
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-modal-open-products-three]'),
-    closeModalBtn: document.querySelector('[data-modal-close-products-three]'),
-    modal: document.querySelector('[data-modal-products-three]'),
-  };
-
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
-
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
-  }
-})();
-
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-modal-open-made]'),
-    closeModalBtn: document.querySelector('[data-modal-close-made]'),
-    modal: document.querySelector('[data-modal-made]'),
-  };
-
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
-
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
-  }
-})();
-
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-modal-open-location]'),
-    closeModalBtn: document.querySelector('[data-modal-close-location]'),
-    modal: document.querySelector('[data-modal-location]'),
-  };
-
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
-
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
-  }
-})();
-
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-modal-open-franchise]'),
-    closeModalBtn: document.querySelector('[data-modal-close-franchise]'),
-    modal: document.querySelector('[data-modal-franchise]'),
-  };
-
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
-
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
-  }
-})();
+// закрытие модального окна кликом по фейду
+allModals.forEach(function (item) {
+  item.addEventListener('click', function () {
+    this.classList.add('is-hidden');
+  });
+});

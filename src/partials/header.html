@@ -11,16 +11,20 @@
       <nav class="site-nav">
         <ul class="site-nav__list">
           <li class="site-nav__item">
-            <a href="#home" class="site-nav__link">Home</a>
+            <a href="#" class="site-nav__link" data-scroll="hd">Home</a>
+          </li>
+          <li class="site-nav__item" data-scroll="made">
+            <a href="#" class="site-nav__link">How it’s made?</a>
           </li>
           <li class="site-nav__item">
-            <a href="#about" class="site-nav__link">How it’s made?</a>
+            <a href="#" class="site-nav__link" data-scroll="product"
+              >Our products</a
+            >
           </li>
           <li class="site-nav__item">
-            <a href="#product" class="site-nav__link">Our products</a>
-          </li>
-          <li class="site-nav__item">
-            <a href="#location" class="site-nav__link">Contact</a>
+            <a href="#" class="site-nav__link" data-scroll="location"
+              >Contact</a
+            >
           </li>
         </ul>
       </nav>
@@ -38,7 +42,7 @@
         </button>
       </div>
 
-      <button class="header__button" data-modal-open-header>
+      <button class="header__button" data-modal-button="modal-1">
         Buy now
         <svg class="button__svg" width="12" height="12">
           <use href="./images/header/icons.svg#frame-45"></use>
@@ -67,21 +71,27 @@
         <div class="mob-menu__nav">
           <ul class="mob-menu__list">
             <li class="mob-menu__item">
-              <a href="#home" class="mob-menu__link">Home</a>
+              <a href="#" class="mob-menu__link" data-scroll="hd">Home</a>
             </li>
             <li class="mob-menu__item">
-              <a href="#about" class="mob-menu__link">How it’s made?</a>
+              <a href="#about" class="mob-menu__link" data-scroll="made"
+                >How it’s made?</a
+              >
             </li>
             <li class="mob-menu__item">
-              <a href="#product" class="mob-menu__link">Our products</a>
+              <a href="#product" class="mob-menu__link" data-scroll="product"
+                >Our products</a
+              >
             </li>
             <li class="mob-menu__item">
-              <a href="#location" class="mob-menu__link">Contact</a>
+              <a href="#location" class="mob-menu__link" data-scroll="location"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
 
-        <button class="mob-menu__button" data-modal-open-header-mod>
+        <button class="mob-menu__button" data-modal-button="modal-1">
           Buy now
           <svg class="button__svg" width="12" height="12">
             <use href="./images/header/icons.svg#frame-45"></use>

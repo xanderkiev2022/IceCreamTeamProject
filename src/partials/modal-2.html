@@ -1,15 +1,12 @@
 <!----------------------- modal-isecream------------------------->
-
-<div class="modal__backdrop is-hidden" data-modal-products data-modal-products-two data-modal-products-three>
+<div class="modal__backdrop is-hidden" data-modal id="modal-2">
   <div class="products__modal">
-    <button
-      type="button"
-      class="button__close-products"
-      data-modal-close-products data-modal-close-products-three data-modal-close-products-two >
+    <button type="button" class="button__close-products" data-modal-close>
       <svg class="icon__close-products" width="20" height="20">
         <use href="./images/product/iconsproduct.svg#icon-close-black"></use>
       </svg>
     </button>
+
     <form name="form" class="modal__form-products" action="">
       <p class="modal__header-products">Chololate icecream</p>
       <div class="modal__proructs-chocolad">
@@ -21,7 +18,7 @@
           <li class="chocolad__iteam">
             Prot..
             <span class="chocolad__desc">4g</span>
-          </li> 
+          </li>
           <li class="chocolad__iteam">
             Fats
             <span class="chocolad__desc">8,2g</span>
@@ -32,6 +29,7 @@
           </li>
         </ul>
       </div>
+
       <div class="modal__proructs-ingridients">
         <p class="ingridients__title">Ingredients</p>
         <ul class="ingridients__list">
@@ -55,6 +53,7 @@
           </li>
         </ul>
       </div>
+
       <div class="modal__proructs-info">
         <label class="form__field-products" for="name">
           <input
