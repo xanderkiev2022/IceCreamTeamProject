@@ -10,11 +10,11 @@ modalButtons.forEach(function (item) {
     modalId.classList.remove('is-hidden');
 
     // отмена закрытия модального окна кликом по его контенту
-    modalId
-      .querySelector('.modal-window')
-      .addEventListener('click', function (event) {
-        event.stopPropagation();
-      });
+    // modalId
+    //   .querySelector('.modal-window')
+    //   .addEventListener('click', function (event) {
+    //     event.stopPropagation();
+    //   });
   });
 });
 
@@ -27,8 +27,8 @@ modalCloseButtons.forEach(function (item) {
 });
 
 // закрытие модального окна кликом по фейду
-allModals.forEach(function (item) {
-  item.addEventListener('click', function () {
-    this.classList.add('is-hidden');
-  });
-});
+// allModals.forEach(function (item) {
+//   item.addEventListener('click', function () {
+//     this.classList.add('is-hidden');
+//   });
+// });
