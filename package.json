@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://tarik2454.github.io/IceCream",
+  "homepage": "https://xanderkiev2022.github.io/IceCreamTeamProject",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /IceCream/"
+    "build": "parcel build src/*.html --public-url /IceCreamTeamProject/"
   },
   "repository": {
     "type": "git",
